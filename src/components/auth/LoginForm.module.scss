@@ -1,0 +1,10 @@
+@import "@/src/styles/variables.scss";
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray-main;
+  height: 350px;
+  width: 600px;
+}

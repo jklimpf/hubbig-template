@@ -1,0 +1,20 @@
+{
+  "Index": {
+    "title": "Početna"
+  },
+  "NotFoundPage": {
+    "title": "Stranica nije pronađena",
+    "message": "Žao nam je, ali stranica koju tražite nije pronađena."
+  },
+  "LoginPage": {
+    "title": "Prijava",
+    "email": "Email",
+    "password": "Lozinka",
+    "login": "Prijava",
+    "error": "Greška prilikom prijave"
+  },
+  "Dashboard": {
+    "title": "Kontrolna ploča",
+    "welcome": "Dobrodošao, {name}!"
+  }
+}

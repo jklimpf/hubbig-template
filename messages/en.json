@@ -1,0 +1,20 @@
+{
+  "Index": {
+    "title": "Homepage"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "message": "Sorry, the page you were looking for could not be found."
+  },
+  "LoginPage": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "login": "Login",
+    "error": "Invalid username or password"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {name}!"
+  }
+}
