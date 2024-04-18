@@ -16,5 +16,21 @@
   "Dashboard": {
     "title": "Dashboard",
     "welcome": "Welcome, {name}!"
-  }
+  },
+  "logout": "Logout",
+  "OIBFormErrorLength": "OIB must be 11 numbers long",
+  "AddressFormError": "Address is missing",
+  "TelephoneFormErrorLength": "Telephone number must be at least 6 numbers long",
+  "CompanyNameFormErrorLength": "Company name must be at least 1 character long",
+  "EmailFormError": "Email is invalid",
+  "UpdateClientLabel": "Update client",
+  "CreateClientLabel": "Create client",
+  "CompanyName": "Company name",
+  "Email": "Email",
+  "Telephone": "Telephone",
+  "Address": "Address",
+  "OIB": "OIB",
+  "UpdateClientButton": "Update client",
+  "CreateClientButton": "Create client",
+  "EmailExistsError": "Email not available"
 }

@@ -1,6 +1,5 @@
 import { NextRequest } from "next/server";
-import { SHA256 as sha256 } from "crypto-js";
-import { prisma } from "@/src/lib/prisma";
+import prisma from "@/src/lib/prisma";
 
 export async function POST(request: NextRequest) {
   const body = await request.json();

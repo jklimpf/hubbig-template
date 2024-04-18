@@ -1,0 +1,87 @@
+@import "@/src/styles/variables.scss";
+
+.formContainer {
+  background-color: $gray-main;
+  width: 800px;
+  height: auto;
+  margin: 50px 50px;
+  padding: 0 70px 40px 70px;
+  position: relative;
+
+  .actionMessageSuccess {
+    background-color: $success-green;
+  }
+  .actionMessageError {
+    background-color: $error-red;
+  }
+
+  .actionMessage {
+    position: absolute;
+    padding: 12px 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .formLabel {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(322px, 1fr));
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+    row-gap: 16px;
+    column-gap: 16px;
+
+    .inputContainer {
+      position: relative;
+
+      input {
+        height: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $gray-main;
+
+        &:focus {
+          outline: none;
+          border-color: $blue-main;
+        }
+      }
+
+      .errorInput {
+        border-color: $font-color-error;
+      }
+
+      .errorMessage {
+        position: absolute;
+        color: $font-color-error;
+        font-size: 12px;
+        bottom: 0;
+        left: 5px;
+      }
+    }
+
+    .submitButton {
+      height: 35px;
+      background-color: $blue-main;
+      border-radius: 5px;
+      border: none;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      grid-column: 1 / -1;
+      margin-top: 6px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
