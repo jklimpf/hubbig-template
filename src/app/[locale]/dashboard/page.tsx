@@ -1,13 +1,9 @@
 "use client";
-import LocaleSwitcher from "@/src/components/LocaleSwither";
+import LocaleSwitcher from "@/src/components/LocaleSwitcher";
+import SidebarNav from "@/src/components/sidebar/SidebarNav";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("Dashboard");
-  return (
-    <div>
-      <LocaleSwitcher />
-      <h1>{t("title")}</h1>
-    </div>
-  );
+  return <div></div>;
 }

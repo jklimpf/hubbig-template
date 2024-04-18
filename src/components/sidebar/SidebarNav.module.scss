@@ -1,0 +1,84 @@
+@import "@/src/styles/variables.scss";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray-main;
+  width: 325px;
+  padding: 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    margin-top: 44px;
+    margin-left: 26px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    ul {
+      list-style-type: none;
+    }
+
+    .navItem {
+      margin-bottom: 32px;
+
+      .icon {
+        width: 36px;
+      }
+
+      .category {
+        margin-bottom: 8px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+
+        .arrow {
+          margin-left: auto;
+          width: 54px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.active {
+          font-weight: bold;
+        }
+      }
+
+      .subItemsList {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .subItemButton {
+          width: 230px;
+          padding: 17px;
+          border: none;
+        }
+
+        .subItem {
+          margin-left: 40px;
+          margin-bottom: 8px;
+          font-size: 14px;
+          color: $font-color-light;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: $blue-main;
+}
+
+@media screen and (max-width: 1000px) {
+}

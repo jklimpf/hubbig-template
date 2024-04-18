@@ -3,7 +3,8 @@ import { useLocale, useTranslations } from "next-intl";
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
-import LocaleSwitcher from "@/src/components/LocaleSwither";
+import LocaleSwitcher from "@/src/components/LocaleSwitcher";
+import axios from "axios";
 
 export default function Index() {
   const t = useTranslations();
@@ -11,9 +12,11 @@ export default function Index() {
   const router = useRouter();
   const locale = useLocale();
 
-  console.log(locale);
-
   const session = useSession();
+
+  const getUsersHandler = async () => {
+    const response = await axios.get("/api/user/get-all-users");
+  };
 
   return (
     <div className={styles.description}>
@@ -22,7 +25,7 @@ export default function Index() {
       {session?.data?.user ? session.data.user.email : "no user"}
       <br />
       {t("Index.title")}
-
+      wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
       {session?.data?.user ? (
         <button
           onClick={() =>
@@ -40,6 +43,8 @@ export default function Index() {
       <button onClick={() => router.push("/dashboard")}>
         {t("Dashboard.title")}
       </button>
+      <br />
+      <button onClick={getUsersHandler}>Get Users</button>
     </div>
   );
 }

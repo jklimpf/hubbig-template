@@ -10,7 +10,6 @@ export default function LocaleSwitcher() {
   const router = useRouter();
 
   const redirectedPathName = (locale: string) => {
-    console.log(pathName);
     if (!pathName) return "/";
 
     const addedLocale = "/" + locale + pathName;

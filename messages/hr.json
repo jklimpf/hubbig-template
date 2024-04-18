@@ -16,5 +16,21 @@
   "Dashboard": {
     "title": "Kontrolna ploča",
     "welcome": "Dobrodošao, {name}!"
-  }
+  },
+  "logout": "Odjava",
+  "OIBFormErrorLength": "OIB mora sadržavati 11 znamenki",
+  "AddressFormError": "Molimo unesite adresu",
+  "TelephoneFormErrorLength": "Broj telefona mora sadržavati najmanje 6 znamenki",
+  "CompanyNameFormErrorLength": "Naziv tvrtke mora sadržavati najmanje 1 znak",
+  "EmailFormError": "Molimo unesite ispravnu email adresu",
+  "CreateClientLabel": "Kreiraj klijenta",
+  "UpdateClientLabel": "Ažuriraj klijenta",
+  "CompanyName": "Naziv tvrtke",
+  "Email": "Email",
+  "Telephone": "Telefon",
+  "Address": "Adresa",
+  "OIB": "OIB",
+  "UpdateClientButton": "Ažuriraj",
+  "CreateClientButton": "Kreiraj",
+  "EmailExistsError": "Email nije dostupan"
 }

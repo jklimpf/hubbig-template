@@ -13,6 +13,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Role {
+  ADMIN
+  CLIENT
+  USER
+}
+
 model User {
   id        String   @id @default(cuid())
   email     String   @unique
@@ -20,4 +26,20 @@ model User {
   password  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  role      Role     @default(USER)
+  telephone String?
+  clientId  String?
+  client    Client?  @relation(fields: [clientId], references: [id])
+}
+
+model Client {
+  id          String   @id @default(cuid())
+  companyName String
+  email       String   @unique
+  telephone   String
+  address     String
+  OIB         String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  Users       User[]
 }

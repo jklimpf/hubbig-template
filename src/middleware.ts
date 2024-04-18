@@ -4,7 +4,7 @@ import { NextRequest } from "next/server";
 import { defaultLocale, locales } from "./i18n";
 import { decode } from "next-auth/jwt";
 
-const publicPages = ["/login", "/register"];
+export const publicPages = ["/login", "/register"];
 
 const intlMiddleware = createMiddleware({
   locales: locales,
@@ -31,8 +31,6 @@ const authMiddleware = withAuth(
           jwtSecret && sessionToken
             ? await decode({ secret: jwtSecret, token: sessionToken })
             : null;
-
-        console.log(decodedToken);
 
         return !!decodedToken?.user;
       },

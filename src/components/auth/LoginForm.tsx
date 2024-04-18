@@ -41,7 +41,7 @@ export function LoginForm() {
         console.log(response.error);
         return;
       } else {
-        router.push("/");
+        router.replace("/");
       }
     } catch (error) {
       console.log(error);
