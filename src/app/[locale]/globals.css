@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0;
   font-family: "Mulish", sans-serif;
-  color: #0a0a16;
+  /* color: #0a0a16; */
+  border-collapse: collapse;
 }
 
 html,

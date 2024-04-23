@@ -32,5 +32,7 @@
   "OIB": "OIB",
   "UpdateClientButton": "Ažuriraj",
   "CreateClientButton": "Kreiraj",
-  "EmailExistsError": "Email nije dostupan"
+  "EmailExistsError": "Email nije dostupan",
+  "ResultsNumberText": "Prikazano {count} rezultata",
+  "NoResults": "Nema rezultata"
 }

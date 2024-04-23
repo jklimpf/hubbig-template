@@ -1,0 +1,59 @@
+@import "@/src/styles/variables.scss";
+
+.row {
+  .highlight {
+    background-color: $light-gray;
+  }
+  .rowCell {
+    border-bottom: 1px solid $light-gray;
+    border-top: 1px solid $light-gray;
+    max-width: 280px;
+
+    .rowText {
+      //   white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+    }
+  }
+
+  .actionButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+    .actionMenu {
+      position: absolute;
+      width: 86px;
+      top: 0;
+      left: 30px;
+      flex-direction: column;
+      background-color: #fff;
+      border: 1px solid $light-gray;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      padding: 4px 0;
+
+      .actionMenuItem {
+        display: flex;
+        padding: 10px 20px 10px 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 14px;
+
+        &:hover {
+          background-color: $light-gray;
+        }
+      }
+      .actionItemWarning {
+        background-color: $error-red;
+      }
+    }
+  }
+}

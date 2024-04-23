@@ -32,5 +32,7 @@
   "OIB": "OIB",
   "UpdateClientButton": "Update client",
   "CreateClientButton": "Create client",
-  "EmailExistsError": "Email not available"
+  "EmailExistsError": "Email not available",
+  "ResultsNumberText": "Showing {count} results",
+  "NoResults": "No results"
 }

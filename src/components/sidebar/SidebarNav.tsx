@@ -15,6 +15,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
 import { publicPages } from "@/src/middleware";
+import Logo from "@/src/assets/images/hubbig_logo.svg";
 
 enum NavItemCategory {
   DRIVERS = "drivers",
@@ -80,6 +81,7 @@ const navItems = [
 ];
 
 export default function SidebarNav() {
+  console.log(Logo);
   const [isOpen, setIsOpen] = useState(false);
 
   const [selectedItem, setSelectedItem] = useState<NavItemCategory[]>([]);
@@ -100,7 +102,7 @@ export default function SidebarNav() {
   return (
     <div className={styles.sidebar}>
       <div className={styles.header}>
-        <div>LOGO</div>
+        <div></div>
         <div
           onClick={() => {
             setIsOpen(false);

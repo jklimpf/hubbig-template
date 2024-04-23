@@ -1,0 +1,35 @@
+@import "@/src/styles/variables.scss";
+
+.paginationContainer {
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .pagination {
+    display: flex;
+
+    .paginationButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid $light-gray;
+      border-radius: 4px;
+      margin-right: 8px;
+      cursor: pointer;
+
+      &.active {
+        border: 1px solid $blue-main;
+      }
+    }
+
+    .disabledButton {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+}
