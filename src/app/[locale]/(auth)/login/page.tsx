@@ -17,7 +17,7 @@ export default async function Login() {
       <LoginForm />
       <br />
       <p>
-        Don't have an account?
+        Dont have an account?
         <span>
           <Link href={"/register"}>Register</Link>
         </span>

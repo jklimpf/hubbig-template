@@ -1,0 +1,15 @@
+@import "@/src/styles/variables.scss";
+
+.header {
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: $off-white;
+
+  .columnCell {
+    text-align: left;
+    font-size: 14px;
+    // font-weight: 600;
+    // border-bottom: 1px solid $light-gray;
+    padding: 16px;
+  }
+}

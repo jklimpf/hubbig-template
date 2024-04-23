@@ -6,3 +6,7 @@ export interface ClientFormData {
   address: string;
   OIB: string;
 }
+
+export interface Client extends ClientFormData {
+  id: string;
+}

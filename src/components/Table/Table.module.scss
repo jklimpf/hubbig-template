@@ -1,0 +1,83 @@
+@import "@/src/styles/variables.scss";
+
+.tableContainer {
+  color: $font-color-dark;
+  min-width: 1150px;
+
+  .noResults {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 23px;
+
+    .searchInput {
+      width: 230px;
+      height: 40px;
+      padding: 0 16px;
+      border: 1px solid $light-gray;
+      border-radius: 4px;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $blue-main;
+      }
+
+      &::placeholder {
+        color: $font-placeholder;
+      }
+    }
+
+    .itemsPerPageText {
+      margin-left: auto;
+      font-size: 14px;
+      color: $font-color-gray;
+      font-weight: 700;
+    }
+
+    .searchButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 47px;
+      height: 40px;
+      border: 1px solid $light-gray;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .table {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    &.withBorder {
+      // border-top: 1px solid $grey-01;
+    }
+
+    tbody td {
+      // border-bottom: 1px solid $grey-01;
+      padding: 20px 16px 20px 8px;
+    }
+
+    tbody tr:first-child {
+      td {
+        //   border-top: 1px solid $grey-01;
+      }
+    }
+
+    tr td:last-child,
+    th:last-child {
+      text-align: right;
+      padding-right: 8px;
+    }
+  }
+}
